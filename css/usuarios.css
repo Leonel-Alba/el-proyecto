@@ -1,0 +1,104 @@
+.user-checkbox {
+    display: none !important;
+}
+
+/* BOTÓN DE USUARIO */
+.user-menu-btn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    user-select: none;
+}
+
+/* CAJA */
+.user-dropdown-box {
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 80px;
+    width: 290px;
+    background-color: #FFFFFF !important;
+    border: 1px solid #EAEAEA !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08) !important;
+    z-index: 150 !important;
+}
+
+/* DETECTOR DE CLIC */
+.user-checkbox:checked ~ .user-dropdown-box,
+#user-menu-toggle:checked ~ .user-dropdown-box {
+    display: block !important;
+}
+
+/* AVATAR Y CORREO */
+.dropdown-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border-bottom: 1px solid #F4F2EE;
+}
+
+.profile-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info h4 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2B231D;
+    margin: 0;
+}
+
+.profile-info p {
+    font-size: 0.85rem;
+    color: #666666;
+    margin: 2px 0 0 0;
+}
+
+/* LISTA */
+.dropdown-menu-list {
+    list-style: none !important;
+    padding: 10px 0 !important;
+    margin: 0 !important;
+    border-bottom: 1px solid #F4F2EE;
+}
+
+.dropdown-menu-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 20px;
+    font-size: 0.9rem;
+    color: #2B231D;
+    font-weight: 500;
+}
+
+.dropdown-menu-list li img {
+    width: 18px;
+    height: 18px;
+    opacity: 0.7;
+}
+
+/* SECCIÓN INFERIOR */
+.dropdown-logout {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    font-size: 0.9rem;
+    color: #2B231D;
+    font-weight: 500;
+    border-radius: 0 0 8px 8px;
+}
+
+.dropdown-logout img {
+    width: 18px;
+    height: 18px;
+    opacity: 0.7;
+}
