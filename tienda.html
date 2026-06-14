@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café del Perú - Tienda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="carrito.css">
+    <link rel="stylesheet" href="códigos/usuario.css"> 
+    <link rel="stylesheet" href="css/xd.css">
+</head>
+<body>
+
+    <input type="checkbox" id="cart-toggle" class="cart-checkbox">
+
+<header class="navbar">
+  <div class="logo">Cafe Del Perú</div>
+  <nav>
+    <a href="index.html" class="enlace-nav">Tienda</a>
+    <a href="uno.html" class="active">Inicio</a>
+  </nav>
+
+  <div class="header-icons">
+    <input type="checkbox" id="user-menu-toggle" class="user-checkbox">
+    
+    <label for="user-menu-toggle" class="user-menu-btn">
+        <img src="LOGOS/circle-user.png" alt="Usuario" class="icon-img"> 
+        <span>Usuario00</span> <small>▼</small>
+    </label>
+
+    <div class="user-dropdown-box">
+        <div class="dropdown-logout">
+            <img src="LOGOS USER/irse.png" alt=""> Cerrar sesión
+        </div>
+    </div>
+
+    <label for="cart-toggle" class="cart-icon-btn">
+        <img src="LOGOS/shopping-cart.png" alt="Carrito" class="icon-img">
+        <span class="cart-badge">0</span>
+    </label>
+  </div>
+</header>
+
+<main id="contenedor-principal">
+
+      <section class="hero-section">
+          <div class="hero-content">
+              <h1>Explora el Horizonte</h1>
+              <p>El viaje comienza donde las luces de la ciudad se encuentran con el amanecer.</p>
+          </div>
+      </section>
+
+      <section id="menu" class="seccion-menu">
+        <h2>Pizzas artesanales con sabor tradicional</h2>
+        <p>Elaboradas con los ingredientes más frescos y horneadas a la perfección.</p>
+
+        <div class="especialidades">
+          <h2>Nuestras Especialidades</h2>
+        </div>
+
+        <div class="contenedor-menu">
+          <article class="menu-container">
+            <div class="menu">
+              <div class="menu-alto">
+                <h3>Pizza Pepperoni.js</h3>
+                <p>Abundante pepperoni con queso mozzarella fundido y salsa de la casa.</p>
+              </div>
+              <div class="menu-bajo">
+                <span class="precio">S/ 35.00</span>
+                <button class="boton-enviar">comprar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-container">
+            <div class="menu">
+              <div class="menu-alto">
+                <h3>Pizza Suprema CSS</h3>
+                <p>Pimiento, cebolla, champiñones, carne picada y un toque de albahaca.</p>
+              </div>
+              <div class="menu-bajo">
+                <span class="precio">S/ 42.00</span>
+                <button class="boton-enviar">comprar</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+</main>
+
+    <script src="navegacion.js"></script>
+
+<footer id="contacto" class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Café del Perú</h3>
+                <p>Café de origen, para los que valoran lo auténtico.</p>
+                <div class="social-icons">
+                    <a href="#"><img src="LOGOS REDES/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="LOGOS REDES/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="LOGOS REDES/whasaa.png" alt="WhatsApp"></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Información</h3>
+                <ul>
+                    <li><a href="#envíos">Envíos</a></li>
+                    <li><a href="#preguntas frecuentes">> Preguntas frecuentes</a></li>
+                    <li><a href="#política de privacidad">> Política de privacidad</a></li>
+                    <li><a href="#términos y condiciones">> Términos y condiciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <p>📩 hola@cafedelperu.pe</p>
+                <p>📞 +51 999 123 456</p>
+                <p>📍 Perú</p>
+            </div>
+        </div>
+</footer>
+
+</body>
+</html>

@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Café del Perú - Tienda</title>
+    <title>Café del Perú - Inicio</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="inicio.css">
     <link rel="stylesheet" href="carrito.css">
     <link rel="stylesheet" href="códigos/usuario.css"> 
-    <link rel="stylesheet" href="css/xd.css">
-</head>
+    <link rel="stylesheet" href="xd.css"> </head>
 <body>
 
     <input type="checkbox" id="cart-toggle" class="cart-checkbox">
@@ -18,8 +17,8 @@
 <header class="navbar">
   <div class="logo">Cafe Del Perú</div>
   <nav>
-    <a href="index.html" class="enlace-nav">Tienda</a>
     <a href="uno.html" class="active">Inicio</a>
+    <a href="index.html" class="enlace-nav">Tienda</a>
   </nav>
 
   <div class="header-icons">
@@ -45,49 +44,87 @@
 
 <main id="contenedor-principal">
 
-      <section class="hero-section">
-          <div class="hero-content">
-              <h1>Explora el Horizonte</h1>
-              <p>El viaje comienza donde las luces de la ciudad se encuentran con el amanecer.</p>
-          </div>
-      </section>
-
-      <section id="menu" class="seccion-menu">
-        <h2>Pizzas artesanales con sabor tradicional</h2>
-        <p>Elaboradas con los ingredientes más frescos y horneadas a la perfección.</p>
-
-        <div class="especialidades">
-          <h2>Nuestras Especialidades</h2>
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Tu Carrito</h3>
+            <label for="cart-toggle" class="close-cart">✕</label>
         </div>
-
-        <div class="contenedor-menu">
-          <article class="menu-container">
-            <div class="menu">
-              <div class="menu-alto">
-                <h3>Pizza Pepperoni.js</h3>
-                <p>Abundante pepperoni con queso mozzarella fundido y salsa de la casa.</p>
-              </div>
-              <div class="menu-bajo">
-                <span class="precio">S/ 35.00</span>
-                <button class="boton-enviar">comprar</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="menu-container">
-            <div class="menu">
-              <div class="menu-alto">
-                <h3>Pizza Suprema CSS</h3>
-                <p>Pimiento, cebolla, champiñones, carne picada y un toque de albahaca.</p>
-              </div>
-              <div class="menu-bajo">
-                <span class="precio">S/ 42.00</span>
-                <button class="boton-enviar">comprar</button>
-              </div>
-            </div>
-          </article>
+        <div class="cart-body">
+            <p class="empty-cart-msg">Tu carrito está vacío.</p>
         </div>
-      </section>
+    </div>
+    <label for="cart-toggle" class="cart-overlay"></label>
+
+    <section id="inicio" class="hero">
+        <img src="IMÁGENES MÁS GRANDES/Granos de café.jpg" alt="Manos cosechando café" class="hero-bg-img">
+        
+        <div class="hero-content">
+            <h1>Café 100% peruano, de origen para el mundo.</h1>
+            <p>Descubre granos de café seleccionados de las mejores regiones del Perú. Sabor que nace en nuestra tierra.</p>
+            <a href="tienda.html" class="btn-primary enlace-nav">Ver productos ➔</a>
+            
+            <div class="hero-features">
+                <div class="feature-item"><img src="LOGOS/leaf.png" alt=""> 100% Peruano</div>
+                <div class="feature-item"><img src="LOGOS/coffee-bean.png" alt=""> Granos selectos</div>
+                <div class="feature-item"><img src="LOGOS/mountains.png" alt=""> De la mejor altura</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tienda" class="products-section">
+        <h2>Nuestros cafés</h2>
+        <p class="subtitle">Granos seleccionados de las mejores regiones del Perú.</p>
+        
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-img-box"><img src="images/cajamarca.png" alt="Café Cajamarca"></div>
+                <h3>Cajamarca</h3>
+                <p class="product-notes"><strong>Notas:</strong> chocolate, caramelo y frutos secos</p>
+                <p class="product-price">S/ 36.00</p>
+                <button class="btn-cart">Agregar al carrito 🛒</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img-box"><img src="images/cusco.png" alt="Café Cusco"></div>
+                <h3>Cusco</h3>
+                <p class="product-notes"><strong>Notas:</strong> cítricos, miel y chocolate</p>
+                <p class="product-price">S/ 36.00</p>
+                <button class="btn-cart">Agregar al carrito 🛒</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img-box"><img src="images/amazonas.png" alt="Café Amazonas"></div>
+                <h3>Amazonas</h3>
+                <p class="product-notes"><strong>Notas:</strong> frutos rojos, floral y cacao</p>
+                <p class="product-price">S/ 36.00</p>
+                <button class="btn-cart">Agregar al carrito 🛒</button>
+            </div>
+        </div>
+        <div class="view-all-box">
+            <a href="tienda.html" class="view-all-link enlace-nav">Ver todos los productos ➔</a>
+        </div>
+    </section>
+
+    <section id="nosotros" class="features-bar">
+        <div class="bar-item">
+            <img src="LOGOS/coriander.png" alt="" class="bar-icon">
+            <h4>Origen peruano</h4>
+            <p>Cafés de las mejores regiones del Perú.</p>
+        </div>
+        <div class="bar-item">
+            <img src="LOGOS/badget-check-alt.png" alt="" class="bar-icon">
+            <h4>Calidad garantizada</h4>
+            <p>Granos seleccionados para un sabor único.</p>
+        </div>
+        <div class="bar-item">
+            <img src="LOGOS/truck-moving.png" alt="" class="bar-icon">
+            <h4>Envíos a todo el país</h4>
+            <p>Entregas rápidas y seguras.</p>
+        </div>
+        <div class="bar-item">
+            <img src="LOGOS/handshake.png" alt="" class="bar-icon">
+            <h4>Comercio justo</h4>
+            <p>Apoyamos a productores y sus familias.</p>
+        </div>
+    </section>
 </main>
 
     <script src="navegacion.js"></script>
