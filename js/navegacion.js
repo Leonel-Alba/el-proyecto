@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search);
     const paginaACargar = urlParams.get('cargar');
 
- if (paginaACargar) {
+    if (paginaACargar) {
         fetch(`${paginaACargar}.html`)
             .then(response => {
                 if (!response.ok) throw new Error("No se pudo recargar la página");
@@ -48,7 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
             void contenedor.offsetWidth;
 
             contenedor.classList.add("animar-entrada");
-            history.pushState(null, "", ruta);
+            const nombrePagina = ruta.replace(".html", "");  
+            history.pushState({ pagina: nombrePagina }, "", `index.html?cargar=${nombrePagina}`);
             const todosLosEnlaces = document.querySelectorAll(".enlace-nav");
             todosLosEnlaces.forEach(enlace => enlace.classList.remove("active"));
             enlaceClicado.classList.add("active");
@@ -59,3 +60,35 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+window.addEventListener("popstate", (e) => {
+    const contenedor = document.getElementById("contenedor-principal");
+    if (!contenedor) return;
+
+    if (e.state && e.state.pagina) {
+        fetch(`${e.state.pagina}.html`)
+            .then(response => {
+                if (!response.ok) throw new Error("Error en historial");
+                return response.text();
+            })
+            .then(html => {
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, "text/html");
+                const nuevoContenido = doc.getElementById("contenedor-principal");
+                
+                if (nuevoContenido) {
+                    contenedor.innerHTML = nuevoContenido.innerHTML;
+
+                    const todosLosEnlaces = document.querySelectorAll(".enlace-nav");
+                    todosLosEnlaces.forEach(enlace => {
+                        enlace.classList.remove("active");
+                        if (enlace.getAttribute("href").includes(e.state.pagina)) {
+                            enlace.classList.add("active");
+                        }
+                    });
+                }
+            })
+            .catch(() => window.location.reload());
+    } else {
+        window.location.href = "index.html";
+    }
+});

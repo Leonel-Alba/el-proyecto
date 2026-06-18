@@ -20,19 +20,28 @@
     padding: 20px 0;
 }
 
+.cafe-cajam   { 
+    background-image: url("../fotos/cafe-cajamarca.png"); 
+}
+.cafe-cusco   { 
+    background-image: url("../fotos/cafe-cuso.png"); 
+}
+.cafe-amaz   { 
+    background-image: url("../fotos/cafe-amzonas.png"); 
+}
 .cafe-ancash { 
-    background-image: url("../fotos/cafe-ancash.jpg"); 
+    background-image: url("../fotos/cafe-ancash.png"); 
 }
 .cafe-junin  { 
-    background-image: url("../fotos/cafe-junin.jpg"); 
+    background-image: url("../fotos/cafe-junin.png"); 
 }
 .cafe-mdios  { 
-    background-image: url("../fotos/cafe-MDios.jpg");
+    background-image: url("../fotos/cafe-MDios.png");
  }
-.cafe-pasco  { background-image: url("../fotos/cafe-pasco.jpg"); 
+.cafe-pasco  { background-image: url("../fotos/cafe-pasco.png"); 
 }
 .cafe-puno   { 
-    background-image: url("../fotos/cafe-puno.jpg"); 
+    background-image: url("../fotos/cafe-puno.png"); 
 }
 
 .btn-filtro {
@@ -58,9 +67,9 @@
     border-color: #2c221e;
 }
 
-.metodo-v60 { background-image: url("../fotos/metodo-v60.jpg"); }
-.metodo-prensa { background-image: url("../fotos/metodo-prensa.jpg"); }
-.metodo-molino { background-image: url("../fotos/metodo-molino.jpg"); }
+.metodo-v60 { background-image: url("../fotos/metodo-v60.png"); }
+.metodo-prensa { background-image: url("../fotos/metodo-prensa.png"); }
+.metodo-molino { background-image: url("../fotos/metodo-molino.png"); }
 
 .catalogo-accesorios {
     display: grid;
