@@ -1,0 +1,41 @@
+    <script>
+    if (!window.hasOwnProperty('carrito') && window.location.pathname.includes('.html')) {
+        const paginaDestino = window.location.pathname.split('/').pop();
+        window.location.href = 'index.html?cargar=' + paginaDestino.replace('.html', '');
+    }
+    </script>
+<main id="contenedor-principal">
+    <section class="seccion-contacto py-5">
+        <div class="container-contacto">
+            <div class="contacto-info">
+                <span class="sub-marca">Conéctate con el origen</span>
+                <h2 class="titulo-contacto">Conversar sobre buen café siempre es un plan</h2>
+                <p class="descripcion-contacto">
+                    ¿Tienes dudas sobre nuestros perfiles de tueste, quieres café para tu negocio o simplemente quieres saludarnos? Escríbenos.
+                </p>
+                <div class="datos-lista">
+                    <p><span>📩</span> Kawsay Roast@gmail.pe</p>
+                    <p><span>📞</span> +51 953 756 456</p>
+                    <p><span>📍</span> Áncash, Perú</p>
+                </div>
+            </div>
+            <div class="contacto-formulario">
+                <form id="form-contacto-kawsay">
+                    <div class="grupo-input">
+                        <input type="text" id="nombre" name="nombre" required placeholder=" ">
+                        <label for="nombre">Tu nombre completo</label>
+                    </div>
+                    <div class="grupo-input">
+                        <input type="email" id="correo" name="correo" required placeholder=" ">
+                        <label for="correo">Correo electrónico</label>
+                    </div>
+                    <div class="grupo-input">
+                        <textarea id="mensaje" name="mensaje"  rows="4" required placeholder=" "></textarea>
+                        <label for="mensaje">¿En qué podemos ayudarte?</label>
+                    </div>
+                    <button type="submit" class="btn-enviar-contacto">Enviar Mensaje ➔</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>

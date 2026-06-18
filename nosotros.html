@@ -1,0 +1,48 @@
+    <script>
+    if (!window.hasOwnProperty('carrito') && window.location.pathname.includes('.html')) {
+        const paginaDestino = window.location.pathname.split('/').pop();
+        window.location.href = 'index.html?cargar=' + paginaDestino.replace('.html', '');
+    }
+    </script>
+<main id="contenedor-principal">
+    <section class="seccion-nosotros py-5 animate-entrada">
+        <div class="container-minimalista">
+            <span class="sub-marca">Nuestra Historia</span>
+            <h1 class="titulo-nosotros">Kawsay significa "Vida"</h1>
+            <p class="texto-nosotros">
+                Nacimos en el corazón de los Andes peruanos con un propósito claro: redefinir la experiencia del café de especialidad. No solo tostamos granos; tendemos puentes entre los microclimas más privilegiados del Perú —desde las imponentes cordilleras de Ancash hasta las místicas tierras de Cusco y Puno— y tu taza diaria.
+            </p>
+        </div>
+    </section>
+
+    <section class="filosofia-container">
+        <div class="grid-filosofia">
+            <div class="bloque-texto">
+                <h3>El Arte del Tueste</h3>
+                <p>Cada lote de café es tratado como una obra única. Respetamos el perfil de cata natural impreso por la altitud y el suelo, aplicando un tueste artesanal que resalta los sutiles matices florales, cítricos y achocolatados de nuestra tierra.</p>
+            </div>
+            <div class="bloque-imagen-nosotros">
+                </div>
+        </div>
+    </section>
+
+    <section class="pilares-seccion py-5">
+        <div class="grid-pilares">
+            <div class="pilar-card">
+                <span class="pilar-numero">01</span>
+                <h4>Origen Único</h4>
+                <p>Trabajamos exclusivamente con cafés de un solo origen, garantizando la trazabilidad exacta desde la finca hasta el empaque.</p>
+            </div>
+            <div class="pilar-card">
+                <span class="pilar-numero">02</span>
+                <h4>Comercio Justo</h4>
+                <p>Establecemos relaciones directas con los caficultores locales, asegurando precios dignos que valoran su conocimiento ancestral.</p>
+            </div>
+            <div class="pilar-card">
+                <span class="pilar-numero">03</span>
+                <h4>Sustentabilidad</h4>
+                <p>Promovemos procesos de cultivo bajo sombra que protegen la biodiversidad y los suelos de nuestra selva alta y valles andinos.</p>
+            </div>
+        </div>
+    </section>
+</main>

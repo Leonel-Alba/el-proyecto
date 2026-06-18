@@ -1,0 +1,102 @@
+.container-minimalista {
+    max-width: 800px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.sub-marca {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #70665f;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.titulo-nosotros {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 38px;
+    color: #2c221e;
+    margin-bottom: 25px;
+}
+
+.texto-nosotros {
+    font-size: 16px;
+    color: #4a3c35;
+    line-height: 1.8;
+}
+
+.filosofia-container {
+    background-color: #f7f4f0;  
+    max-width: 1200px;
+    margin: 40px auto;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.grid-filosofia {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.bloque-texto {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bloque-texto h3 {
+    font-size: 24px;
+    color: #2c221e;
+    margin-bottom: 15px;
+}
+
+.bloque-texto p {
+    font-size: 14px;
+    color: #70665f;
+    line-height: 1.6;
+}
+
+.bloque-imagen-nosotros {
+    background-image: 
+        url('../css/grano-cafe.jpg'); 
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+}
+
+.grid-pilares {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.pilar-card {
+    border-top: 1px solid #ece6e0;
+    padding-top: 20px;
+}
+
+.pilar-numero {
+    font-size: 12px;
+    font-weight: 600;
+    color: #a39891;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.pilar-card h4 {
+    font-size: 18px;
+    color: #2c221e;
+    margin-bottom: 12px;
+}
+
+.pilar-card p {
+    font-size: 13px;
+    color: #70665f;
+    line-height: 1.6;
+}

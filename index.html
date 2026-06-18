@@ -3,131 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Café del Perú - Inicio</title>
+    <title>Café del Perú</title>
+    
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="inicio.css">
-    <link rel="stylesheet" href="carrito.css">
-    <link rel="stylesheet" href="códigos/usuario.css"> 
-    <link rel="stylesheet" href="xd.css"> </head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/inicio.css">
+    <link rel="stylesheet" href="./css/tienda.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+    <link rel="stylesheet" href="./css/nosotros.css">
+</head>
 <body>
 
     <input type="checkbox" id="cart-toggle" class="cart-checkbox">
-
-<header class="navbar">
-  <div class="logo">Cafe Del Perú</div>
-  <nav>
-    <a href="uno.html" class="active">Inicio</a>
-    <a href="index.html" class="enlace-nav">Tienda</a>
-  </nav>
-
-  <div class="header-icons">
-    <input type="checkbox" id="user-menu-toggle" class="user-checkbox">
-    
-    <label for="user-menu-toggle" class="user-menu-btn">
-        <img src="LOGOS/circle-user.png" alt="Usuario" class="icon-img"> 
-        <span>Usuario00</span> <small>▼</small>
-    </label>
-
-    <div class="user-dropdown-box">
-        <div class="dropdown-logout">
-            <img src="LOGOS USER/irse.png" alt=""> Cerrar sesión
-        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="barra-anuncios">
+        <div id="anuncio-texto" class="anuncio-contenido">🚚 Envíos gratis a todo el Perú por compras mayores a S/ 150</div>
     </div>
 
-    <label for="cart-toggle" class="cart-icon-btn">
-        <img src="LOGOS/shopping-cart.png" alt="Carrito" class="icon-img">
-        <span class="cart-badge">0</span>
-    </label>
+<header class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm px-3 px-md-5">
+  <div class="container-fluid">
+    
+    <div class="logo-imagen navbar-brand fw-bold text-dark" style="font-family: sans-serif;">
+      <p>Kawsay Roast</p>
+    </div>
+
+    <div class="d-flex align-items-center order-lg-last gap-3">
+      
+    <div class="contenedor-usuario">
+        <a href="perfil.html" class="enlace-nav perfil-cliente d-flex align-items-center text-decoration-none">
+            <i class="bi bi-person-circle fs-5 me-1 icon-perfil"></i>
+            <span class="small name-perfil d-none d-sm-inline">Jean Laurente</span>
+        </a>
+    </div>
+        
+      <label for="cart-toggle" class="carrito position-relative text-dark" style="cursor: pointer; font-size: 1.2rem;">
+        <i class="bi bi-cart3"></i>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.6rem; padding: 0.25em 0.4em;">0</span>
+      </label>
+
+      <button class="navbar-toggler border-0 ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    </div>
+
+    <div class="collapse navbar-collapse justify-content-center" id="menuNavegacion">
+      <nav class="navbar-nav navegacion gap-2 text-center my-2 my-lg-0">
+        <a href="index.html" class="nav-link active enlace-nav">Inicio</a>
+        <a href="tienda.html" class="nav-link enlace-nav">Tienda</a>
+        <a href="contacto.html" class="nav-link enlace-nav">Contacto</a>
+        <a href="nosotros.html" class="nav-link enlace-nav">Nosotros</a>
+      </nav>
+    </div>
+
   </div>
 </header>
-
-<main id="contenedor-principal">
-
-    <div class="cart-sidebar">
-        <div class="cart-header">
+    <div class="carrito-sidebar shadow">
+        <div class="carrito-header">
             <h3>Tu Carrito</h3>
-            <label for="cart-toggle" class="close-cart">✕</label>
+            <label for="cart-toggle" class="btn-cerrar-carrito"><i class="bi bi-x-lg"></i></label>
         </div>
-        <div class="cart-body">
-            <p class="empty-cart-msg">Tu carrito está vacío.</p>
+
+        <div id="carrito-items" class="carrito-items-contenedor">
+            <p class="carrito-vacio-txt">Tu carrito está vacío.</p>
+        </div>
+
+        <div class="carrito-footer">
+            <div class="carrito-total">
+                <span>Total:</span>
+                <span id="carrito-total-monto">S/ 0.00</span>
+            </div>
+            <button class="btn-pagar w-100">Iniciar Compra</button>
         </div>
     </div>
-    <label for="cart-toggle" class="cart-overlay"></label>
 
-    <section id="inicio" class="hero">
-        <img src="IMÁGENES MÁS GRANDES/Granos de café.jpg" alt="Manos cosechando café" class="hero-bg-img">
+    <label for="cart-toggle" id="fondo-oscuro" class="superposición-carrito"></label>
+
+<main id="contenedor-principal" class="contenedor-principal">
+
+    <section class="hero-section position-relative overflow-hidden">
+        <video autoplay loop muted playsinline class="video-hero">
+            <source src="./video/video-cafe.mp4" type="video/mp4">
+        </video>
+
+        <div class="capa-oscura"></div>
         
-        <div class="hero-content">
-            <h1>Café 100% peruano, de origen para el mundo.</h1>
-            <p>Descubre granos de café seleccionados de las mejores regiones del Perú. Sabor que nace en nuestra tierra.</p>
-            <a href="tienda.html" class="btn-primary enlace-nav">Ver productos ➔</a>
-            
-            <div class="hero-features">
-                <div class="feature-item"><img src="LOGOS/leaf.png" alt=""> 100% Peruano</div>
-                <div class="feature-item"><img src="LOGOS/coffee-bean.png" alt=""> Granos selectos</div>
-                <div class="feature-item"><img src="LOGOS/mountains.png" alt=""> De la mejor altura</div>
-            </div>
+        <div class="hero-content position-relative text-center text-md-start">
+            <span class="etiqueta-hero animar-entrada">Café de Especialidad</span>
+            <h1 class="animar-entrada">Café 100% peruano, de origen para el mundo.</h1>
+            <p class="animar-entrada">Descubre granos seleccionados de las mejores regiones del Perú. Sabor auténtico que nace en nuestra tierra.</p>
         </div>
     </section>
 
-    <section id="tienda" class="products-section">
+    <section id="tienda" class="seccion1">
         <h2>Nuestros cafés</h2>
-        <p class="subtitle">Granos seleccionados de las mejores regiones del Perú.</p>
-        
-        <div class="products-grid">
-            <div class="product-card">
-                <div class="product-img-box"><img src="images/cajamarca.png" alt="Café Cajamarca"></div>
+        <p class="subtitulo">Granos seleccionados de las mejores regiones del Perú.</p>
+        <div class="seccion-productos">
+            <div class="productoss">
+                <div class="cafe-cajam"></div>
                 <h3>Cajamarca</h3>
-                <p class="product-notes"><strong>Notas:</strong> chocolate, caramelo y frutos secos</p>
-                <p class="product-price">S/ 36.00</p>
-                <button class="btn-cart">Agregar al carrito 🛒</button>
+                <p class="notas"><strong>Notas:</strong>chocolate, frutos rojos y un toque floral</p>
+                <p class="precio">S/ 36.00</p>
+                <button class="btn-carrito">Agregar al carrito 🛒</button>
             </div>
-            <div class="product-card">
-                <div class="product-img-box"><img src="images/cusco.png" alt="Café Cusco"></div>
+            <div class="productoss">
+                <div class="cafe-cusco"></div>
                 <h3>Cusco</h3>
-                <p class="product-notes"><strong>Notas:</strong> cítricos, miel y chocolate</p>
-                <p class="product-price">S/ 36.00</p>
-                <button class="btn-cart">Agregar al carrito 🛒</button>
+                <p class="notas"><strong>Notas:</strong> cítricos, miel y chocolate</p>
+                <p class="precio">S/ 36.00</p>
+                <button class="btn-carrito">Agregar al carrito 🛒</button>
             </div>
-            <div class="product-card">
-                <div class="product-img-box"><img src="images/amazonas.png" alt="Café Amazonas"></div>
+            <div class="productoss">
+                <div class="cafe-amaz"></div>
                 <h3>Amazonas</h3>
-                <p class="product-notes"><strong>Notas:</strong> frutos rojos, floral y cacao</p>
-                <p class="product-price">S/ 36.00</p>
-                <button class="btn-cart">Agregar al carrito 🛒</button>
+               <p class="notas"><strong>Notas:</strong> chocolate, miel y frutas exóticas</p>
+                <p class="precio">S/ 36.00</p>
+                <button class="btn-carrito">Agregar al carrito 🛒</button>
             </div>
         </div>
-        <div class="view-all-box">
-            <a href="tienda.html" class="view-all-link enlace-nav">Ver todos los productos ➔</a>
+        <div>
+            <a href="tienda.html" class="enlace-nav tienda-link">Ver todos los productos ➔</a>
         </div>
     </section>
 
-    <section id="nosotros" class="features-bar">
-        <div class="bar-item">
-            <img src="LOGOS/coriander.png" alt="" class="bar-icon">
+    <section id="nosotros" class="barra-caracte">
+        <div class="barra-fin">
             <h4>Origen peruano</h4>
             <p>Cafés de las mejores regiones del Perú.</p>
         </div>
-        <div class="bar-item">
-            <img src="LOGOS/badget-check-alt.png" alt="" class="bar-icon">
+        <div class="barra-fin">
             <h4>Calidad garantizada</h4>
             <p>Granos seleccionados para un sabor único.</p>
         </div>
-        <div class="bar-item">
-            <img src="LOGOS/truck-moving.png" alt="" class="bar-icon">
+       <div class="barra-fin">
             <h4>Envíos a todo el país</h4>
             <p>Entregas rápidas y seguras.</p>
         </div>
-        <div class="bar-item">
-            <img src="LOGOS/handshake.png" alt="" class="bar-icon">
+        <div class="barra-fin">
             <h4>Comercio justo</h4>
             <p>Apoyamos a productores y sus familias.</p>
         </div>
     </section>
 </main>
-
-    <script src="navegacion.js"></script>
 
 <footer id="contacto" class="footer">
         <div class="footer-container">
@@ -135,9 +156,15 @@
                 <h3>Café del Perú</h3>
                 <p>Café de origen, para los que valoran lo auténtico.</p>
                 <div class="social-icons">
-                    <a href="#"><img src="LOGOS REDES/facebook.png" alt="Facebook"></a>
-                    <a href="#"><img src="LOGOS REDES/instagram.png" alt="Instagram"></a>
-                    <a href="#"><img src="LOGOS REDES/whasaa.png" alt="WhatsApp"></a>
+                    <a href="https://web.whatsapp.com" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                      <path href="https://web.whatsapp.com/" d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                    </svg></a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                    </svg></a>
+                    <a href="https://web.facebook.com" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                    </svg></a>
                 </div>
             </div>
             <div class="footer-col">
@@ -151,12 +178,18 @@
             </div>
             <div class="footer-col">
                 <h3>Contacto</h3>
-                <p>📩 hola@cafedelperu.pe</p>
-                <p>📞 +51 999 123 456</p>
+                <p>📩 Kawsay Roast@gmail.pe</p>
+                <p>📞 +51 953 756 456</p>
                 <p>📍 Perú</p>
             </div>
         </div>
 </footer>
+  
+    <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 1100;">
+    </div>
+    <script src="anuncios.js"></script>
+    <script src="navegacion.js"></script>
+    <script src="tienda-contacto.js"></script> 
 
 </body>
 </html>
