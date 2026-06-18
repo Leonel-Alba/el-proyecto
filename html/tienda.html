@@ -1,7 +1,7 @@
     <script>
     if (!window.hasOwnProperty('carrito') && window.location.pathname.includes('.html')) {
         const paginaDestino = window.location.pathname.split('/').pop();
-        window.location.href = 'index.html?cargar=' + paginaDestino.replace('.html', '');
+        window.location.href = '../index.html?cargar=' + paginaDestino.replace('.html', '');
     }
     </script>
 <main id="contenedor-principal">

@@ -4,18 +4,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search);
     const paginaACargar = urlParams.get('cargar');
 
-    if (paginaACargar) {
-       fetch(`${paginaACargar}.html`)
-            .then(response => response.text())
+ if (paginaACargar) {
+        fetch(`${paginaACargar}.html`)
+            .then(response => {
+                if (!response.ok) throw new Error("No se pudo recargar la página");
+                return response.text();
+            })
             .then(html => {
                 const parser = new DOMParser();
                 const doc = parser.parseFromString(html, "text/html");
                 const nuevoContenido = doc.getElementById("contenedor-principal");
+                
                 if (nuevoContenido) {
-                  contenedor.innerHTML = nuevoContenido.innerHTML;
-                  history.replaceState(null, "", `${paginaACargar}.html`);
+                    contenedor.innerHTML = nuevoContenido.innerHTML;
+                    history.replaceState(null, "", `${paginaACargar}.html`);
                 }
-            });
+            })
     }
 
   document.addEventListener("click", (e) => {
@@ -50,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
             enlaceClicado.classList.add("active");
           }
         })
-        .catch(error => console.error("Error al cargar la página:", error));
+        .catch(err => console.error("Error en rutas SPA:", err));
     }
   });
 });
