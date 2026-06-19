@@ -16,7 +16,6 @@
 
     <input type="checkbox" id="cart-toggle" class="cart-checkbox">
 
-    <!-- BARRA DE ANUNCIOS -->
     <div class="barra-anuncios">
         <div id="carruselAnuncios" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
             <div class="carousel-inner text-center">
@@ -29,12 +28,12 @@
 
     <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm px-3 px-md-5">
         <div class="container-fluid">
-            <a href="index.html" class="logo-imagen navbar-brand fw-bold text-dark text-decoration-none" style="font-family: sans-serif;">
+            <a href="../inicio/index.html" class="logo-imagen navbar-brand fw-bold text-dark text-decoration-none" style="font-family: sans-serif; background-image: url('../fotos/logo.png');">
                 <p>Kawsay Roast</p>
             </a>
             <div class="d-flex align-items-center order-lg-last gap-3">
                 <div class="contenedor-usuario">
-                    <a href="perfil.html" class="perfil-cliente d-flex align-items-center text-decoration-none">
+                    <a href="../perfil/perfil.html" class="perfil-cliente d-flex align-items-center text-decoration-none">
                         <i class="bi bi-person-circle fs-5 me-1 icon-perfil"></i>
                         <span class="small name-perfil d-none d-sm-inline">Jean Laurente</span>
                     </a>
@@ -49,10 +48,10 @@
             </div>
             <div class="collapse navbar-collapse justify-content-center" id="menuNavegacion">
                 <nav class="navbar-nav navegacion gap-2 text-center my-2 my-lg-0">
-                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="../html/index.html" class="nav-link">Inicio</a>
                     <a href="tienda.html" class="nav-link active">Tienda</a>
-                    <a href="contacto.html" class="nav-link">Contacto</a>
-                    <a href="nosotros.html" class="nav-link">Nosotros</a>
+                    <a href="../html/contacto.html" class="nav-link">Contacto</a>
+                    <a href="../html/nosotros.html" class="nav-link">Nosotros</a>
                 </nav>
             </div>
         </div>
@@ -93,6 +92,14 @@
                 <p>Una experiencia distinta en cada taza, directo de su origen.</p>
             </div>
         </section>
+
+        <section id="menu" class="seccion-menu py-5">
+            <div class="container">
+                <div class="d-flex justify-content-center gap-2 mb-5 flex-wrap">
+                    <button class="btn-filtro active">Todos</button>
+                    <button class="btn-filtro">Origen Andino</button>
+                    <button class="btn-filtro">Origen Amazónico</button>
+                </div>
 
                 <h2 class="text-center mb-4">Granos de Especialidad</h2>
                 <p class="text-center text-muted mb-5">Selección exclusiva de las mejores regiones del Perú.</p>

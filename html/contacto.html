@@ -16,7 +16,6 @@
 
     <input type="checkbox" id="cart-toggle" class="cart-checkbox">
 
-    <!-- BARRA DE ANUNCIOS -->
     <div class="barra-anuncios">
         <div id="carruselAnuncios" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
             <div class="carousel-inner text-center">
@@ -27,7 +26,6 @@
         </div>
     </div>
 
-    <!-- HEADER (Enlace activo cambiado a Contacto) -->
     <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm px-3 px-md-5">
         <div class="container-fluid">
             <a href="index.html" class="logo-imagen navbar-brand fw-bold text-dark text-decoration-none" style="font-family: sans-serif;">
@@ -59,7 +57,6 @@
         </div>
     </header>
 
-    <!-- SIDEBAR DEL CARRITO -->
     <div class="carrito-sidebar shadow">
         <div class="carrito-header">
             <h3>Tu Carrito</h3>
@@ -88,7 +85,6 @@
 
     <label for="cart-toggle" id="fondo-oscuro" class="superposición-carrito"></label>
 
-    <!-- CONTENIDO EXCLUSIVO CONTACTO -->
     <main id="contenedor-principal" style="padding-top: 35px; min-height: 100vh;">
         <section class="seccion-contacto py-5">
             <div class="container-contacto">
@@ -105,7 +101,6 @@
                     </div>
                 </div>
                 <div class="contacto-formulario">
-                    <!-- Eliminamos el ID javascript y dejamos el comportamiento clásico -->
                     <form>
                         <div class="grupo-input">
                             <input type="text" id="nombre" name="nombre" required placeholder=" ">
@@ -119,7 +114,6 @@
                             <textarea id="mensaje" name="mensaje" rows="4" required placeholder=" "></textarea>
                             <label for="mensaje">¿En qué podemos ayudarte?</label>
                         </div>
-                        <!-- Botón amarrado al modal nativo de Bootstrap -->
                         <button type="button" class="btn-enviar-contacto" data-bs-toggle="modal" data-bs-target="#modalExito">Enviar Mensaje ➔</button>
                     </form>
                 </div>
@@ -127,7 +121,6 @@
         </section>
     </main>
 
-    <!-- MODAL DE ÉXITO NATIVO (REMPLAZA LA ACCIÓN DEL JS) -->
     <div class="modal fade" id="modalExito" tabindex="-1" aria-labelledby="modalExitoLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content" style="border-radius: 12px; border: 1px solid #ece6e0;">

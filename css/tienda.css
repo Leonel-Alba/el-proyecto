@@ -25,7 +25,7 @@
     border: 1px solid #ece6e0 !important; 
     border-radius: 12px !important; 
     padding: 25px !important; 
-    margin: 10px !important; /* Forzamos el margen que se había perdido */
+    margin: 10px !important;
     box-shadow: 0 10px 30px rgba(44, 34, 30, 0.05) !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex !important;
@@ -69,7 +69,7 @@
     border: 1px solid #ece6e0 ; 
     border-radius: 12px !important; 
     padding: 25px !important; 
-    margin: 10px !important; /* Forzamos el margen que se había perdido */
+    margin: 10px !important;
     box-shadow: 0 10px 30px rgba(44, 34, 30, 0.05) !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex !important;

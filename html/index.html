@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kawsay Roast - Tienda</title>
+    <title>Kawsay Roast - Café del Perú</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/tienda.css">
+    <link rel="stylesheet" href="../css/inicio.css">
 </head>
 <body>
 
@@ -28,32 +28,38 @@
 
     <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm px-3 px-md-5">
         <div class="container-fluid">
-            <a href="../inicio/index.html" class="logo-imagen navbar-brand fw-bold text-dark text-decoration-none" style="font-family: sans-serif; background-image: url('../fotos/logo.png');">
+            
+            <a href="index.html" class="logo-imagen navbar-brand fw-bold text-dark text-decoration-none" style="font-family: sans-serif;">
                 <p>Kawsay Roast</p>
             </a>
+
             <div class="d-flex align-items-center order-lg-last gap-3">
                 <div class="contenedor-usuario">
-                    <a href="../perfil/perfil.html" class="perfil-cliente d-flex align-items-center text-decoration-none">
+                    <a href="perfil.html" class="perfil-cliente d-flex align-items-center text-decoration-none">
                         <i class="bi bi-person-circle fs-5 me-1 icon-perfil"></i>
                         <span class="small name-perfil d-none d-sm-inline">Jean Laurente</span>
                     </a>
                 </div>
+                    
                 <label for="cart-toggle" class="carrito position-relative text-dark" style="cursor: pointer; font-size: 1.2rem;">
                     <i class="bi bi-cart3"></i>
                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.6rem; padding: 0.25em 0.4em;">1</span>
                 </label>
+
                 <button class="navbar-toggler border-0 ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
+
             <div class="collapse navbar-collapse justify-content-center" id="menuNavegacion">
                 <nav class="navbar-nav navegacion gap-2 text-center my-2 my-lg-0">
-                    <a href="../inicio/index.html" class="nav-link">Inicio</a>
-                    <a href="tienda.html" class="nav-link active">Tienda</a>
-                    <a href="../contacto/contacto.html" class="nav-link">Contacto</a>
-                    <a href="../nosotros/nosotros.html" class="nav-link">Nosotros</a>
+                    <a href="index.html" class="nav-link active">Inicio</a>
+                    <a href="../html/tienda.html" class="nav-link">Tienda</a>
+                    <a href="../html/contacto.html" class="nav-link">Contacto</a>
+                    <a href="../html/nosotros.html" class="nav-link">Nosotros</a>
                 </nav>
             </div>
+
         </div>
     </header>
 
@@ -62,6 +68,7 @@
             <h3>Tu Carrito</h3>
             <label for="cart-toggle" class="btn-cerrar-carrito"><i class="bi bi-x-lg"></i></label>
         </div>
+
         <div id="carrito-items" class="carrito-items-contenedor">
             <div style="display: flex; justify-content: space-between; margin-bottom: 15px; font-size: 14px;">
                 <div>
@@ -74,6 +81,7 @@
                 </button>
             </div>
         </div>
+
         <div class="carrito-footer">
             <div class="carrito-total">
                 <span>Total:</span>
@@ -85,112 +93,66 @@
 
     <label for="cart-toggle" id="fondo-oscuro" class="superposición-carrito"></label>
 
-    <main id="contenedor-principal" style="padding-top: 35px; min-height: 100vh;">
-        <section class="cabecera-tienda">
-            <div class="contenido-tienda">
-                <h1>Nuestra Ruta del Café</h1>
-                <p>Una experiencia distinta en cada taza, directo de su origen.</p>
+    <main id="contenedor-principal" class="contenedor-principal" style="padding-top: 35px; min-height: 100vh;">
+        <section class="hero-section position-relative overflow-hidden">
+            <video autoplay loop muted playsinline class="video-hero">
+                <source src="../video/video-cafe.mp4" type="video/mp4">
+            </video>
+            <div class="capa-oscura"></div>
+            <div class="hero-content position-relative text-center text-md-start">
+                <span class="etiqueta-hero animar-entrada">Café de Especialidad</span>
+                <h1 class="animar-entrada">Café 100% peruano, de origen para el mundo.</h1>
+                <p class="animar-entrada">Descubre granos seleccionados de las mejores regiones del Perú. Sabor auténtico que nace en nuestra tierra.</p>
             </div>
         </section>
 
-        <section id="menu" class="seccion-menu py-5">
-            <div class="container">
-                <div class="d-flex justify-content-center gap-2 mb-5 flex-wrap">
-                    <button class="btn-filtro active">Todos</button>
-                    <button class="btn-filtro">Origen Andino</button>
-                    <button class="btn-filtro">Origen Amazónico</button>
+        <section id="tienda" class="seccion1 py-5">
+            <h2 class="text-center">Nuestros cafés</h2>
+            <p class="text-center text-muted mb-4">Granos seleccionados de las mejores regiones del Perú.</p>
+            <div class="seccion-productos">
+                <div class="productoss">
+                    <div class="cafe-cajam"></div>
+                    <h3>Cajamarca</h3>
+                    <p class="notas"><strong>Notas:</strong> chocolate, frutos rojos y un toque floral</p>
+                    <p class="precio">S/ 36.00</p>
+                    <button class="btn-carrito">Agregar al carrito 🛒</button>
                 </div>
-
-                <h2 class="text-center mb-4">Granos de Especialidad</h2>
-                <p class="text-center text-muted mb-5">Selección exclusiva de las mejores regiones del Perú.</p>
-                
-                <div class="seccion-productos mb-5">
-                    <div class="productoss" data-origen="andino">
-                        <div class="imagen-cafe cafe-cajam"></div>
-                        <h3>Cajamarca Premium</h3>
-                        <p class="notas"><strong>Notas:</strong> chocolate, frutos rojos y un toque floral</p>
-                        <p class="precio">S/ 36.00</p>
-                        <button class="btn-carrito">Agregar al carrito 🛒</button>
-                    </div>
-                    <div class="productoss" data-origen="andino">
-                        <div class="imagen-cafe cafe-cusco"></div>
-                        <h3>Cusco Premium</h3>
-                        <p class="notas"><strong>Notas:</strong> cítricos, miel y chocolate</p>
-                        <p class="precio">S/ 36.00</p>
-                        <button class="btn-carrito">Agregar al carrito 🛒</button>
-                    </div>
-                    <div class="productoss" data-origen="amazónico">
-                        <div class="imagen-cafe cafe-amaz"></div>
-                        <h3>Amazonas Premium</h3>
-                        <p class="notas"><strong>Notas:</strong> chocolate, miel y frutas exóticas</p>
-                        <p class="precio">S/ 36.00</p>
-                        <button class="btn-carrito">Agregar al carrito 🛒</button>
-                    </div>
-                    <div class="productoss" data-origen="andino">
-                        <div class="imagen-cafe cafe-ancash"></div>
-                        <h3>Ancash Premium</h3>
-                        <p class="notas"><strong>Notas:</strong> cacao montañoso, caramelo y un toque sutil de hierba andina</p>
-                        <p class="precio">S/ 36.00</p>
-                        <button class="btn-carrito">Agregar al carrito 🛒</button>
-                    </div>
-                    <div class="productoss" data-origen="andino">
-                        <div class="imagen-cafe cafe-junin"></div>
-                        <h3>Junín Premium</h3>
-                        <p class="notas"><strong>Notas:</strong> cacao, nueces y un toque cítrico</p>
-                        <p class="precio">S/ 36.00</p>
-                        <button class="btn-carrito">Agregar al carrito 🛒</button>
-                    </div>
-                    <div class="productoss" data-origen="amazónico">
-                        <div class="imagen-cafe cafe-mdios"></div>
-                        <h3>Madre de Dios Premium</h3>
-                        <p class="notas"><strong>Notas:</strong> frutas exóticas, chocolate tropical y un toque de nuez amazónica</p>
-                        <p class="precio">S/ 36.00</p>
-                        <button class="btn-carrito">Agregar al carrito 🛒</button>
-                    </div>
-                    <div class="productoss" data-origen="amazónico">
-                        <div class="imagen-cafe cafe-pasco"></div>
-                        <h3>Pasco Premium</h3>
-                        <p class="notas"><strong>Notas:</strong> cacao amargo, frutos secos y un perfil profundo y persistente</p>
-                        <p class="precio">S/ 36.00</p>
-                        <button class="btn-carrito">Agregar al carrito 🛒</button>
-                    </div>
-                    <div class="productoss" data-origen="andino">
-                        <div class="imagen-cafe cafe-puno"></div>
-                        <h3>Puno Premium</h3>
-                        <p class="notas"><strong>Notas:</strong> cacao, almendras y frutas maduras</p>
-                        <p class="precio">S/ 36.00</p>
-                        <button class="btn-carrito">Agregar al carrito 🛒</button>
-                    </div>
+                <div class="productoss">
+                    <div class="cafe-cusco"></div>
+                    <h3>Cusco</h3>
+                    <p class="notas"><strong>Notas:</strong> cítricos, miel y chocolate</p>
+                    <p class="precio">S/ 36.00</p>
+                    <button class="btn-carrito">Agregar al carrito 🛒</button>
                 </div>
-                
-                <hr class="my-5" style="border-color: #ece6e0;">
-
-                <h2 class="text-center mb-4">Métodos & Accesorios</h2>
-                <p class="text-center text-muted mb-5">Herramientas esenciales para extraer el mejor perfil de tus granos.</p>
-
-                <div class="catalogo-accesorios">
-                    <div class="productoss">
-                        <div class="imagen-cafe metodo-v60"></div>
-                        <h3>Cafetera V60</h3>
-                        <p class="notas">Ideal para resaltar las notas florales y cítricas de cafés de alta altitud.</p>
-                        <p class="precio">S/ 65.00</p>
-                        <button class="btn-carrito">Agregar al carrito 🛒</button>
-                    </div>
-                    <div class="productoss">
-                        <div class="imagen-cafe metodo-prensa"></div>
-                        <h3>Prensa Francesa</h3>
-                        <p class="notas">Perfecta para una taza con mucho cuerpo, aceites naturales y gran consistencia.</p>
-                        <p class="precio">S/ 85.00</p>
-                        <button class="btn-carrito">Agregar al carrito 🛒</button>
-                    </div>
-                    <div class="productoss">
-                        <div class="imagen-cafe metodo-molino"></div>
-                        <h3>Molino Manual Premium</h3>
-                        <p class="notas">Molienda ajustable con muelas de cerámica para moler en el momento.</p>
-                        <p class="precio">S/ 120.00</p>
-                        <button class="btn-carrito">Agregar al carrito 🛒</button>
-                    </div>
+                <div class="productoss">
+                    <div class="cafe-amaz"></div>
+                    <h3>Amazonas</h3>
+                    <p class="notas"><strong>Notas:</strong> chocolate, miel y frutas exóticas</p>
+                    <p class="precio">S/ 36.00</p>
+                    <button class="btn-carrito">Agregar al carrito 🛒</button>
                 </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="tienda.html" class="tienda-link">Ver todos los productos ➔</a>
+            </div>
+        </section>
+
+        <section class="barra-caracte border-top">
+            <div class="barra-fin">
+                <h4>Origen peruano</h4>
+                <p>Cafés de las mejores regiones del Perú.</p>
+            </div>
+            <div class="barra-fin">
+                <h4>Calidad garantizada</h4>
+                <p>Granos seleccionados para un sabor único.</p>
+            </div>
+            <div class="barra-fin">
+                <h4>Envíos a todo el país</h4>
+                <p>Entregas rápidas y seguras.</p>
+            </div>
+            <div class="barra-fin">
+                <h4>Comercio justo</h4>
+                <p>Apoyamos a productores y sus familias.</p>
             </div>
         </section>
     </main>
