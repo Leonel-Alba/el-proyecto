@@ -61,7 +61,7 @@
 
 .bloque-imagen-nosotros {
     background-image: 
-        url('../css/grano-cafe.jpg'); 
+        url('../fotos/grano-cafe.jpg'); 
     background-size: cover;
     background-position: center;
     min-height: 300px;
@@ -99,4 +99,56 @@
     font-size: 13px;
     color: #70665f;
     line-height: 1.6;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    padding: 0 20px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ece6e0;
+    margin-bottom: 10px;
+}
+
+.faq-pregunta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.faq-pregunta h4 {
+    font-size: 16px;
+    color: #2c221e;
+    margin: 0;
+}
+
+.faq-pregunta i {
+    color: #70665f;
+    transition: transform 0.3s ease;
+}
+
+.faq-respuesta {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.faq-respuesta p {
+    font-size: 14px;
+    color: #70665f;
+    line-height: 1.6;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.faq-item.activo .faq-respuesta {
+    max-height: 100px;
+}
+
+.faq-item.activo .faq-pregunta i {
+    transform: rotate(180deg);
 }
