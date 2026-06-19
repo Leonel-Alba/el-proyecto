@@ -20,54 +20,70 @@
     padding: 20px 0;
 }
 
+.seccion-productos .productoss {
+    background-color: #ffffff !important;
+    border: 1px solid #ece6e0 !important; 
+    border-radius: 12px !important; 
+    padding: 25px !important; 
+    margin: 10px !important; /* Forzamos el margen que se había perdido */
+    box-shadow: 0 10px 30px rgba(44, 34, 30, 0.05) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important; 
+    text-align: center !important;
+}
+
+.seccion-productos .productoss:hover {
+    transform: translateY(-5px) !important; 
+    box-shadow: 0 15px 35px rgba(44, 34, 30, 0.08) !important;
+}
+
 .cafe-cajam   { 
     background-image: url("../fotos/cafe-cajamarca.png"); 
 }
 .cafe-cusco   { 
     background-image: url("../fotos/cafe-cuso.png"); 
 }
-.cafe-amaz   { 
+.cafe-amaz    { 
     background-image: url("../fotos/cafe-amzonas.png"); 
 }
-.cafe-ancash { 
+.cafe-ancash  { 
     background-image: url("../fotos/cafe-ancash.png"); 
 }
-.cafe-junin  { 
+.cafe-junin   { 
     background-image: url("../fotos/cafe-junin.png"); 
 }
-.cafe-mdios  { 
+.cafe-mdios   { 
     background-image: url("../fotos/cafe-MDios.png");
- }
-.cafe-pasco  { background-image: url("../fotos/cafe-pasco.png"); 
 }
-.cafe-puno   { 
+.cafe-pasco   { 
+    background-image: url("../fotos/cafe-pasco.png"); 
+}
+.cafe-puno    { 
     background-image: url("../fotos/cafe-puno.png"); 
 }
 
-.btn-filtro {
-    background-color: #f7f4f0;
-    color: #70665f;
-    border: 1px solid #ece6e0;
-    padding: 8px 20px;
-    border-radius: 20px;
-    font-size: 13px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s ease;
+.seccion-productos .productoss {
+    background-color: #ffffff;
+    border: 1px solid #ece6e0 ; 
+    border-radius: 12px !important; 
+    padding: 25px !important; 
+    margin: 10px !important; /* Forzamos el margen que se había perdido */
+    box-shadow: 0 10px 30px rgba(44, 34, 30, 0.05) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important; 
+    text-align: center !important;
 }
 
-.btn-filtro:hover {
-    border-color: #2c221e;
-    color: #2c221e;
+.seccion-productos .productoss:hover {
+    transform: translateY(-5px) !important; 
+    box-shadow: 0 15px 35px rgba(44, 34, 30, 0.08) !important;
 }
 
-.btn-filtro.active {
-    background-color: #2c221e;
-    color: #ffffff;
-    border-color: #2c221e;
-}
-
-.metodo-v60 { background-image: url("../fotos/metodo-v60.png"); }
+.metodo-v60    { background-image: url("../fotos/metodo-v60.png"); }
 .metodo-prensa { background-image: url("../fotos/metodo-prensa.png"); }
 .metodo-molino { background-image: url("../fotos/metodo-molino.png"); }
 
@@ -89,7 +105,6 @@
         grid-template-columns: repeat(3, 1fr);
         max-width: 1050px; 
     }
-
 }
 
 .cabecera-tienda {
@@ -130,4 +145,22 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.productoss .btn-carrito {
+    background-color: #2c221e !important;
+    color: #ffffff !important; 
+    border: none !important;
+    border-radius: 6px !important;
+    padding: 10px 22px !important; 
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    cursor: pointer;
+    margin-top: 15px !important;         
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.productoss .btn-carrito:hover {
+    background-color: #4a3c35 !important; 
+    transform: scale(1.02) !important;
 }
