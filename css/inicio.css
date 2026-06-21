@@ -36,8 +36,8 @@
 
  .productoss:hover {
     transform: translateY(-5px); 
-    box-shadow: 0 15px 35px rgba(44, 34, 30, 0.08); /* Sombra un poco más profunda */
-}
+    box-shadow: 0 15px 35px rgba(44, 34, 30, 0.08);
+ }
 
 .cafe-cajam {
   width: 100%;
