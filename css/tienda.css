@@ -54,14 +54,20 @@
 .cafe-junin   { 
     background-image: url("../fotos/cafe-junin.png"); 
 }
-.cafe-mdios   { 
-    background-image: url("../fotos/cafe-MDios.png");
+.cafe-huanu   { 
+    background-image: url("../fotos/huanuco.png");
 }
 .cafe-pasco   { 
     background-image: url("../fotos/cafe-pasco.png"); 
 }
 .cafe-puno    { 
     background-image: url("../fotos/cafe-puno.png"); 
+}
+.cafe-piura    { 
+    background-image: url("../fotos/piura.png"); 
+}
+.cafe-sanmar    { 
+    background-image: url("../fotos/san-martin.png"); 
 }
 
 .seccion-productos .productoss {
@@ -163,4 +169,8 @@
 .productoss .btn-carrito:hover {
     background-color: #4a3c35 !important; 
     transform: scale(1.02) !important;
+}
+
+.extras {
+    display: flex;
 }

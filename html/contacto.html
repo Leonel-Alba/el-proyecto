@@ -95,24 +95,32 @@
                         ¿Tienes dudas sobre nuestros perfiles de tueste, quieres café para tu negocio o simplemente quieres saludarnos? Escríbenos.
                     </p>
                     <div class="datos-lista">
-                        <p><span>📩</span> KawsayRoast@gmail.pe</p>
-                        <p><span>📞</span> +51 953 756 456</p>
-                        <p><span>📍</span> Áncash, Perú</p>
+                        <p><i class="bi bi-envelope"></i> KawsayRoast@gmail.pe</p>
+                        <p><i class="bi bi-telephone"></i> +51 953 756 456</p>
+                        <p><i class="bi bi-geo-alt"></i> Áncash, Perú</p>
                     </div>
                 </div>
                 <div class="contacto-formulario">
                     <form>
-                        <div class="grupo-input">
-                            <input type="text" id="nombre" name="nombre" required placeholder=" ">
-                            <label for="nombre">Tu nombre completo</label>
-                        </div>
-                        <div class="grupo-input">
-                            <input type="email" id="correo" name="correo" required placeholder=" ">
-                            <label for="correo">Correo electrónico</label>
-                        </div>
-                        <div class="grupo-input">
-                            <textarea id="mensaje" name="mensaje" rows="4" required placeholder=" "></textarea>
-                            <label for="mensaje">¿En qué podemos ayudarte?</label>
+                        <div class="contacto-formulario">
+                            <form>
+                                <div class="grupo-input">
+                                    <input type="text" id="nombre" name="nombre" required placeholder=" ">
+                                    <label for="nombre">Tu nombre completo</label>
+                                </div>
+                                <div class="grupo-input">
+                                    <input type="email" id="correo" name="correo" required placeholder=" ">
+                                    <label for="correo">Correo electrónico</label>
+                                </div>
+                                <div class="grupo-input">
+                                    <input type="text" id="codigo-empaque" name="codigo-empaque" required placeholder=" " pattern="[A-Za-z0-9\-]+" title="Ingresa un código válido (letras, números o guiones)">
+                                    <label for="codigo-empaque">Código del empaque (Ej: KW-ANC-2026)</label>
+                                </div>
+                                <div class="grupo-input">
+                                    <textarea id="mensaje" name="mensaje" rows="4" required placeholder=" "></textarea>
+                                    <label for="mensaje">¿En qué podemos ayudarte?</label>
+                                </div>
+                            </form>
                         </div>
                         <button type="button" class="btn-enviar-contacto" data-bs-toggle="modal" data-bs-target="#modalExito">Enviar Mensaje ➔</button>
                     </form>
