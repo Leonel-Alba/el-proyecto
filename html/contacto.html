@@ -26,7 +26,7 @@
         </div>
     </div>
 
-    <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm px-3 px-md-5">
+    <header class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm px-3 px-md-5">
         <div class="container-fluid">
             <a href="index.html" class="logo-imagen navbar-brand fw-bold text-dark text-decoration-none" style="font-family: sans-serif;">
                 <p>Kawsay Roast</p>
@@ -103,7 +103,6 @@
                 <div class="contacto-formulario">
                     <form>
                         <div class="contacto-formulario">
-                            <form>
                                 <div class="grupo-input">
                                     <input type="text" id="nombre" name="nombre" required placeholder=" ">
                                     <label for="nombre">Tu nombre completo</label>
@@ -120,7 +119,6 @@
                                     <textarea id="mensaje" name="mensaje" rows="4" required placeholder=" "></textarea>
                                     <label for="mensaje">¿En qué podemos ayudarte?</label>
                                 </div>
-                            </form>
                         </div>
                         <button type="button" class="btn-enviar-contacto" data-bs-toggle="modal" data-bs-target="#modalExito">Enviar Mensaje ➔</button>
                     </form>
@@ -164,19 +162,17 @@
             </div>
             <div class="footer-col">
                     <h4 class="footer-col-title">Contacto</h4>
-                    <ul class="footer-contacts">
-                        <i class="bi bi-envelope"></i>
-                            <span>Email: info@kawsayroast.com</span>
-                        </li>
-                        <li class="footer-contact-item">
-                            <i class="bi bi-telephone"></i>
-                            <span>Teléfono: +51 123 456 789</span>
-                        </li>
-                        <li class="footer-contact-item">
-                            <i class="bi bi-geo-alt"></i>
-                            <span>Ubicación: Lima, Perú</span>
-                        </li>
-                    </ul>
+                <ul class="footer-contacts p-0" style="list-style: none;">
+                    <li class="footer-contact-item mb-2">
+                        <i class="bi bi-envelope me-2"></i><span>Email: info@kawsayroast.com</span>
+                    </li>
+                    <li class="footer-contact-item mb-2">
+                        <i class="bi bi-telephone me-2"></i><span>Teléfono: +51 123 456 789</span>
+                    </li>
+                    <li class="footer-contact-item">
+                        <i class="bi bi-geo-alt me-2"></i><span>Ubicación: Lima, Perú</span>
+                    </li>
+                </ul>
                 </div>
         </div>
     </footer>

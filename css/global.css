@@ -380,14 +380,3 @@ header.fixed-top {
     color: #2c221e;
 }
 
-:root {
-    --color-principal: #1a1a1a;
-    --color-secundario: #5c3d2e;
-    --color-texto: #333333;
-    --color-texto-mutado: #666666;
-    --color-fondo: #f9f9f9;
-    --color-blanco: #7c0000;
-    --color-borde: #e0e0e0;
-    --color-hover: #f0f0f0;
-    --fuente-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
