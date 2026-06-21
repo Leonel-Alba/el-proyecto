@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio | Kawsay Roast </title>
+        <link rel="stylesheet" href="xd.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="logo">
+                    <a href="kawsay roast.html">
+                     <img src="IMG/hojita logo.png" alt="Kawsay Roast Logo" class="navbar-logo-img">
+                     <span>Kawsay Roast</span>
+                    </a>
+                </div>
+                <!-- Navegación -->
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="kawsay roast.html">Inicio</a></li>
+                        <li><a href="tienda.html">Tienda</a></li>
+                        <li><a href="nosotros.html" class="active">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="navbar-actions">
+                    <div class="navbar-user" id="userDropToggle">
+                        <img src="OTROS ÍCONOS/jean plablo.png" alt="Avatar usuario" class="navbar-avatar">
+                        <span class="navbar-username">Jean Laurente</span>
+                        <img src="IMG/flecha-abajo.png" alt="Menú Usuario" class="navbar-chevron">
+
+                        <!--Dropdown-->
+                        <div class="user-dropdown" id="userDropdown">
+                            <div class="dropdown-header">
+                                <img src="OTROS ÍCONOS/jean plablo.png" alt="Avatar" class="dropdown-avatar">
+                                <div>
+                                    <p class="dropdown-name">Jean Laurente</p>
+                                    <p class="dropdown-email">JeanLaurente@gmail.com</p>
+                                </div>
+                            </div>
+                            <hr class="dropdown-divider">
+                            <ul class="dropdown-menu-list">
+                                <li class="dropdown-item">
+                                    <img src="#" alt="" class="dropdown-icon">
+                                    <span>Mi cuenta</span>
+                                </li>
+                                <li class="dropdown-item">
+                                    <img src="#" alt="" class="dropdown-icon">
+                                    <span>Mis pedidos</span>
+                                </li>
+                                <li class="dropdown-item">
+                                    <img src="OTROS ÍCONOS/direcciones.png" alt="" class="dropdown-icon">
+                                    <span>Direcciones</span>
+                                </li>
+                                <li class="dropdown-item">
+                                    <img src="OTROS ÍCONOS/metodos-pago.png" alt="" class="dropdown-icon">
+                                    <span>Métodos de pago</span>
+                                </li>
+                                <hr class="dropdown-divider">
+                                <li class="dropdown-item dropdown-item-cerrar">
+                                    <img src="OTROS ÍCONOS/cerrar-sesion.png" alt="" class="dropdown-icon">
+                                    <span>Cerrar sesión</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="navbar-cart" id="cartDropToggle">
+                        <img src="IMG/shopping-cart.png" alt="Carrito" class="navbar-cart-icon">
+                        <span class="navbar-cart-badge">0</span>
+
+                        <!--Dropdown carrito-->
+                        <div class="cart-dropdown" id="cartDropdown">
+                            <div class="cart-dropdown-header">
+                                <span class="cart-dropdown-title">Tu carrito</span>
+                                <img src="IMG/shopping-cart.png" alt="Carrito" class="cart-dropdown-icon">
+                            </div>
+                            <div class="cart-empty">
+                                <div class="cart-empty-circle">
+                                    <img src="IMG/shopping-cart.png" alt="Carrito vacío" class="cart-empty-icon">
+                                </div>
+                                <p class="cart-empty-text">Tu carrito está vacío</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+         <section class="hero">
+            <img src="IMG GRANDES/Granos de café.jpg" alt="Manos cosechando café" class="hero-bg">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Sobre nosotros</h1>
+                <p class="hero-subtitle">Conoce al equipo responsable del desarrollo de Kawsay Roast y el propósito detrás de este proyecto académico.</p>
+            </div>
+        </section>
+
+        <!--Informaión-->
+        <section class="proyecto">
+            <div class="proyecto-inner">
+                <div class="proyecto-foto">
+                    <img src="IMG GRANDES/team trululú trabajando.png" alt="Equipo trabajando" class="proyecto-foto-img">
+                </div>
+                <div class="proyecto-datos">
+
+                    <!--Institución-->
+                    <div class="proyecto-dato">
+                        <img src="ICONOS NOSOTROS/graduation-cap.png" alt="Institución" class="proyecto-dato-icon">
+                        <div class="proyecto-dato-texto">
+                            <h4 class="proyecto-dato-titulo">Institución</h4>
+                            <p class="proyecto-dato-valor">Institución de Cibertec</p>
+                        </div>
+                    </div>
+
+                    <!--Tutor-->
+                    <div class="proyecto-dato">
+                        <img src="OTROS ÍCONOS/user.png" alt="Tutor" class="proyecto-dato-icon">
+                        <div class="proyecto-dato-texto">
+                            <h4 class="proyecto-dato-titulo">Tutor</h4>
+                            <p class="proyecto-dato-valor">Jean Laurente</p>
+                        </div>
+                    </div>
+
+                    <!--Proyecto-->
+                    <div class="proyecto-dato">
+                        <img src="ICONOS NOSOTROS/folder.png" alt="Proyecto" class="proyecto-dato-icon">
+                        <div class="proyecto-dato-texto">
+                            <h4 class="proyecto-dato-titulo">Proyecto</h4>
+                            <p class="proyecto-dato-valor">Kawsay Roast</p>
+                        </div>
+                    </div>
+
+                    <!--Descripción-->
+                    <div class="proyecto-dato">
+                        <img src="ICONOS NOSOTROS/task-checklist.png" alt="Descripción" class="proyecto-dato-icon">
+                        <div class="proyecto-dato-texto">
+                            <h4 class="proyecto-dato-titulo">Descripción</h4>
+                            <p class="proyecto-dato-valor">Kawsay Roast es una página web desarrollada como proyecto académico con el propósito de aplicar conocimientos de diseño web, organización de contenido y experiencia de usuario.</p>
+                        </div>
+                    </div>
+
+                </div> 
+            </div>
+        </section>
+
+        <!--Objetivos del proyecto-->
+        <section class="objetivos">
+            <h2 class="objetivos-title">Objetivos del proyecto</h2>
+            <div class="objetivos-grid">
+
+                <div class="objetivo-card">
+                    <img src="ICONOS NOSOTROS/monitor.png" alt="Diseño moderno" class="objetivo-icon">
+                    <h3 class="objetivo-nombre">Diseño moderno</h3>
+                    <p class="objetivo-descripcion">Crear una interfaz atractiva y profecional que refleje una imagen limpia y actual</p>
+                </div> 
+
+                <div class="objetivo-card">
+                    <img src="ICONOS NOSOTROS/global.png" alt="Experiencia de usuario" class="objetivo-icon">
+                    <h3 class="objetivo-nombre">Experiencia de usuario</h3>
+                    <p class="objetivo-descripcion">Facicilitar una navegación intiutiva y accesible para todos los vivitantes del sitio</p>
+                </div>
+
+                <div class="objetivo-card">
+                    <img src="#" alt="Identidad peruana" class="objetivo-icon">
+                    <h3 class="objetivo-nombre">Identidad peruana</h3>
+                    <p class="objetivo-descripcion">Representar elementos culturales y productos del Perú mediante una plataforma digital.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Team Trululú-->
+        <section class="equipo">
+            <h2 class="equipo-title">Nuestro equipo</h2>
+            <div class="equipo-grid">
+
+                <div class="equipo-card">
+                    <img src="FOTOS DE PERFIL/colque.jpg" alt="Leonel Colque" class="equipo-foto">
+                    <h3 class="equipo-nombre">Leonel Alba</h3>
+                    <p class="equipo-rol">Integrante</p>
+                </div>
+
+                <div class="equipo-card">
+                    <img src="FOTOS DE PERFIL/obispo.PNG" alt="Ailyn Obispo" class="equipo-foto">
+                    <h3 class="equipo-nombre">Ailyn Obispo</h3>
+                    <p class="equipo-rol">Integrante</p>
+                </div>
+
+                <div class="equipo-card">
+                    <img src="FOTOS DE PERFIL/ñaupari.jpg" alt="Ángel Ñaupari" class="equipo-foto">
+                    <h3 class="equipo-nombre">Ángel Ñaupari</h3>
+                    <p class="equipo-rol">Integrante</p>
+                </div>
+
+                <div class="equipo-card">
+                    <img src="FOTOS DE PERFIL/rodriguez.webp" alt="Brandon Rodriguez" class="equipo-foto">
+                    <h3 class="equipo-nombre">Brandon Rodriguez</h3>
+                    <p class="equipo-rol">Integrante</p>
+                </div>
+
+                <div class="equipo-card">
+                    <img src="FOTOS DE PERFIL/miriam.jpeg" alt="Miriam Huamán" class="equipo-foto">
+                    <h3 class="equipo-nombre">Miriam Huamán</h3>
+                    <p class="equipo-rol">Integrante</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Herramientas y Aprendizajes-->
+        <section class="herramientas-aprendizajes">
+            <div class="herramientas-aprendizajes-inner">
+
+                <!--herramientas-->
+                <div class="herramientas">
+                    <h2 class="herramientas-title">Herramientas utilizadas</h2>
+                    <div class="herramientas-grid">
+
+                        <div class="herramienta-card">
+                            <img src="ICONOS NOSOTROS/html5_.webp" alt="HTML5" class="herramienta-icon">
+                            <span class="herramienta-nombre">HTML</span>
+                        </div>
+
+                        <div class="herramienta-card">
+                            <img src="ICONOS NOSOTROS/javascript.webp" alt="JavaScript" class="herramienta-icon">
+                            <span class="herramienta-nombre">JavaScript</span>
+                        </div>
+
+                        <div class="herramienta-card">
+                            <img src="ICONOS NOSOTROS/Visual_Studio_Code.png" alt="Visual Studio Code" class="herramienta-icon">
+                            <span class="herramienta-nombre">Visual Studio Code</span>
+                        </div>
+
+                        <div class="herramienta-card">
+                            <img src="ICONOS NOSOTROS/CSS-ICON.webp" alt="CSS3" class="herramienta-icon">
+                            <span class="herramienta-nombre">CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Aprendizajes-->
+                <div class="aprendizajes">
+                    <h2 class="aprendizajes-title">Aprendizajes obtenidos</h2>
+                    <div class="aprendizajes-content">
+                        <p class="aprendizajes-texto">Durante el desarrollo de este proyecto fortalecimos nuestra habilidades en diseño de interfaces, estructuración de páginas web, organización de contenido digital y trabajo colaborativo.</p>
+
+                        <div class="aprendizajes-iconos">
+                            <img src="ICONOS NOSOTROS/bombilla-de-idea.webp" alt="Aprendizaje" class="aprendizaje-icon">
+                            <img src="ICONOS NOSOTROS/icono-de-libros.png" alt="Conocimiento" class="aprendizaje-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Pie de página-->
+        <footer class="footer">
+            <div class="footer-inner">
+                <!--Columna 1-->
+                <div class="footer-col footer-col-brand">
+                    <div class="footer-brand">
+                        <img src="IMG/hojita logo.png" alt="Kawsay Roast Logo" class="footer-logo">
+                        <span class="footer-brand-name">Kawsay Roast</span>
+                    </div>
+                    <p class="footer-tagline">Café de calidad con origen peruano</p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link" aria-label="Facebook">
+                            <img src="LOGO REDES/facebook.png" alt="Facebook" class="footer-social-icon">
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="Instagram">
+                            <img src="LOGO REDES/instagram.png" alt="Instagram" class="footer-social-icon">
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="Whatsapp">
+                            <img src="LOGO REDES/whatsapp.png" alt="WhatsApp" class="footer-social-icon">
+                        </a>
+                    </div>
+                </div>
+                <!--Columna 2-->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Información</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link footer-link-icon">Envíos</a></li>
+                        <li><a href="#" class="footer-link">Preguntas frecuentes</a></li>
+                        <li><a href="#" class="footer-link">Política de privacidad</a></li>
+                        <li><a href="#" class="footer-link">Términos de servicio</a></li>
+                    </ul>
+                </div>
+                <!--Columna 3-->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Contacto</h4>
+                    <ul class="footer-contacts">
+                        <li class="footer-contact-item">
+                            <img src="LOGO REDES/email.png" alt="Email" class="footer-contact-icon">
+                            <span>Email: info@kawsayroast.com</span>
+                        </li>
+                        <li class="footer-contact-item">
+                            <img src="LOGO REDES/phone-call.png" alt="Teléfono" class="footer-contact-icon">
+                            <span>Teléfono: +51 123 456 789</span>
+                        </li>
+                        <li class="footer-contact-item">
+                            <img src="OTROS ÍCONOS/gps.png" alt="Ubicación" class="footer-contact-icon">
+                            <span>Ubicación: Lima, Perú</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Kawsay Roast. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+        <script src="JAVA/kawsay roast.js"></script>
+    </body>
+</html>
